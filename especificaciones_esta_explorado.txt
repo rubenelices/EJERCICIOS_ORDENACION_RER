@@ -1,0 +1,43 @@
+Especificaciones algorirmo esta_explorado:
+
+
+Propósito:
+Verificar si un segmento en una tabla t ha sido explorado correctamente, siguiendo ciertos pasos específicos.
+
+
+Definición:
+Un segmento en una tabla t de componentes de tipo T que derivan de COMPARABLE es una serie de componentes consecutivos cuyo valor máximo es el primero de la serie.
+
+
+Entrada:
+t: lista de numeros separtados por espacios: int
+inicio: Indice de inicio del segmento: int
+fin: Indice de fin del segmento: int
+
+
+Salida:
+Un booleano confirmando que se ha ordenado la lista segun los segmentos citados y la lista de los elementos ordenada segun las Especificaciones
+
+
+Precondicion:
+Desplazar los elementos de t una celda hacia la izquierda
+Colocar el elemento mas grande de cada segmento al inicio de dicho segmento
+
+
+Poscondicion:
+Después de ejecutar la función está_explorado, el segmento de la tabla t desde el índice inicio hasta el índice fin debe estar explorado según las especificaciones definidas
+El resto de la tabla t que no está en el segmento explorado debe permanecer inalterado.
+
+
+Definiciones adicionales:
+Un segmento Si en la tabla t contiene una secuencia de componentes consecutivos desde el índice di hasta el índice fi, donde 1 ≤ i ≤ k y k es el número total de segmentos en t.
+El primer componente de cada segmento Si es el máximo valor dentro del segmento, es decir, max(Si) = t[di].
+El máximo valor de cada segmento Si es menor o igual al valor del componente siguiente al último componente del segmento, es decir, max(Si) ≤ t[fi + 1]
+
+
+Ejemplo de uso del código:
+1. Ingresar la lista de números separados por espacios: Ingresar una lista cualquiera de numeros 
+2. Seleccione el número donde desea que comience el primer segmento: de dicha lista indicar donde comienza el segmento( Tener en cuenta que el primer numero de la lista es el 0)
+3. Seleccione el número donde desea que termine el primer segmento: Indicar donde termina el segmento 
+4. Realizar la exploracion: Se realiza la exploración y se ordena automaticamente el segmento dado con el numero mas grande en primera posicion.
+5. Salir
